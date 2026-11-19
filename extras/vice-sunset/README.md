@@ -2,7 +2,7 @@
 
 Herdr's default window at dusk on a Florida-style coast: a deep purple sky behind the panes, hot pink neon on whatever has focus, a sunset orange for primary buttons, and terminal colors taken from the same evening (magenta, turquoise sea, palm green, warm yellow, ocean blue). The layout is Herdr's own `main`, with this look added to it.
 
-![Vice Sunset](preview.png)
+![Vice Sunset](vice-sunset.png)
 
 ## What you see
 
@@ -36,7 +36,7 @@ Herdr's default window at dusk on a Florida-style coast: a deep purple sky behin
 
 ## Watch out
 
-- **Copy the theme too.** Adding the layout means copying `layouts/vice-sunset.json` and `layouts/vice-sunset.png` to `layouts/` and `themes/vice-sunset.json` to `themes/`. Without the theme file the layout falls back to Herdr's default colors.
+- **Copy the theme too.** From this folder, adding the layout means copying `layouts/vice-sunset.json` and `layouts/vice-sunset.png` to `~/.config/herdr-app/layouts/` and `themes/vice-sunset.json` to `~/.config/herdr-app/themes/`. Without the theme file the layout falls back to Herdr's default colors.
 - Because the theme has the layout's name, Settings offers it only while this layout shows, as Herdr does with `win98`. To use the colors in another layout, copy the theme file under another name and pick it there.
 - The layout is a copy of `main` from Herdr's app version that shipped `main` 0.1.9. A later `main` can add things this copy doesn't have; when that matters, clone the newer `main` (`layout.clone`) and add the three root fields again.
 - The colors are an interpretation of a sunset palette, not taken from any game's or brand's files.
