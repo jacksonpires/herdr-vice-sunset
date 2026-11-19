@@ -1,33 +1,32 @@
-# Vice Sunset for the Herdr app
+# Vice Sunset layouts for the Herdr app
 
-A dusk-on-the-coast look for the [Herdr app](https://herdr.dev): deep purple panes, hot pink focus, sunset orange buttons and terminal colors from the same evening. It is Herdr's default layout with this theme on it.
+Two dusk-on-the-coast layouts for the [Herdr app](https://herdr.dev), both built on Herdr's default layout with the same palette: deep purple, hot pink neon focus, sunset orange buttons and terminal colors from the same evening.
 
-![Vice Sunset](preview.png)
+## Vice Sunset
+
+A calm version: Herdr's usual window with the sunset theme and a purple gradient behind the panes.
+
+![Vice Sunset](vice-sunset/preview.png)
+
+## Vice Poster
+
+The window as a sunset poster: panes as framed tiles over a purple-to-orange sky with palm silhouettes, the sky showing between and through them.
+
+![Vice Poster](vice-poster/preview.png)
 
 ## Install
 
-Tell your agent:
+Tell your agent, with the folder of the one you want:
 
 ```
-Read ~/.config/herdr-app/AGENTS.md, then add this layout: https://github.com/jacksonpires/herdr-vice-sunset
+Read ~/.config/herdr-app/AGENTS.md, then add this layout: https://github.com/jacksonpires/herdr-vice-sunset/tree/main/vice-poster
 ```
 
-Or by hand: copy `layouts/vice-sunset.json` and `layouts/vice-sunset.png` to `~/.config/herdr-app/layouts/`, `themes/vice-sunset.json` to `~/.config/herdr-app/themes/`, then pick **Vice Sunset** in Settings or run `herdr-app do layout.switch --name vice-sunset`. `ctrl-shift-l` switches back.
+Or by hand, from inside `vice-sunset/` or `vice-poster/`: copy `layouts/*` to `~/.config/herdr-app/layouts/`, `themes/*` to `~/.config/herdr-app/themes/` and, for Vice Poster, `backgrounds/vice-poster.png` to `~/.config/herdr-app/backgrounds/`. Then pick it in Settings or run `herdr-app do layout.switch --name vice-poster` (or `vice-sunset`). `ctrl-shift-l` switches back.
 
-## Colors
+Each folder has a `RECIPE.md` that describes the layout in full, so an agent can rebuild it from scratch.
 
-| Role | Color |
-|---|---|
-| Terminal background | `#1a0f2e` |
-| Text | `#f3e8ff` |
-| Accent, focus, cursor | `#ff4fa3` |
-| Primary buttons | `#ff7a3d` |
-| Window gradient | `#2b1145` → `#120821` |
-| Working / done / blocked | `#ffb347` / `#3ddc97` / `#ff4f6d` |
-
-The 16 terminal colors are in `themes/vice-sunset.json`. `RECIPE.md` describes the whole look, so an agent can rebuild it from scratch.
-
-The palette is an original take on a sunset mood. It is not affiliated with or taken from any game or brand.
+The palette and drawings are an original take on a sunset mood. They are not affiliated with or taken from any game or brand.
 
 ## License
 
